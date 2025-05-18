@@ -1,0 +1,21 @@
+{
+  // Interface name for display only
+  "interface": "eth0",
+  // Packets-per-second alert threshold
+  "pps_threshold": 100000,
+  // Megabits-per-second alert threshold
+  "mbps_threshold": 900,
+  // Port where sFlow datagrams are received
+  "port": 6343,
+  // Graph update interval in ms
+  "updateInterval": 1000,
+  // Seconds to wait before firing OK script after traffic back to normal
+  "ok_delay_secs": 60,
+  // Trigger scripts per state (uncomment the states you wish to enable)
+  "trigger_script": {
+    "OK": "./scripts/reset.sh",
+    // "WARNING": "./scripts/warning.sh",
+    // "ABNORMAL": "./scripts/abnormal.sh",
+    "CRITICAL": "./scripts/critical.sh"
+  }
+}
