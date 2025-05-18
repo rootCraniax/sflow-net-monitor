@@ -1,0 +1,9 @@
+{
+  "name": "sflow-net-monitor",
+  "version": "1.0.0",
+  "description": "A lightweight CLI tool to monitor sFlow network traffic and trigger custom scripts on traffic events.",
+  "main": "net_monitor.js",
+  "author": "Ali E. Mubarak",
+  "license": "MIT",
+  "dependencies": {}
+}
